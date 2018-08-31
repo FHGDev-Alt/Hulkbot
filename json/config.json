@@ -1,11 +1,17 @@
 { 
   "prefix": "h!",
   "admins": ["356248091227324426", "251928361851551756", "140487710727995392", "215689512058224640"],
-  "version": "1.2.0",
+  "version": "2.0.0",
   "banreason": "",
   "kickreason": "",
   "premiumState": "false",
   "donotAnnounce": ["264445053596991498", "110373943822540800"],
   "updates": ["Autoroles!"],
-  "userblacklist": [""]
+  "userblacklist": [""],
+  "admins": {
+    "Owner": "FHGDev#0964",
+    "Co-Owner": "FHGDev#7733",
+    "Main Admin": "RHG#8022",
+    "Co-Admin": "NovalFuzzy#8115"
+  }
 }
