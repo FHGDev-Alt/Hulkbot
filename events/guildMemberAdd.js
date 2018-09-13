@@ -2,6 +2,8 @@ module.exports = (bot, member) => {
    let guildids = ["318532861638737931", "264445053596991498",  "110373943822540800"],
    donowelcome = ["318532861638737931", "349661783612719119"],
    autoroles = {
+       "everbotrole": "489886404198006795",
+      "everrole": "489883674305757185",
       "ifrole": "439514265250955275",
       "ifbotrole": "440342710914646028",
       "robloxlovers": "428953426840256513",
@@ -12,6 +14,7 @@ module.exports = (bot, member) => {
       "rlbotrole": "431520359494189057"
    },
    autoroleguilds = {
+      "ed": "489745002604265483",
      "if": "439513692162490370",
      "rl": "426909155832365066",
      "rd": "419160188541599744",
@@ -35,12 +38,19 @@ module.exports = (bot, member) => {
          console.log(`${member.displayName} just joined ${member.guild.name}`);
       }
    }
-   
+   if (member.guild.id == autoroleguilds.ed) {
+       if (member.user.bot) {
+           member.addRole(autoguilds.everbotrole)
+       } else {
+           member.addRole(autoroles.everrole)
+       }
+   }
    if (member.guild.id == autoroleguilds.rl) {
       if (member.user.bot) {
          member.addRole(autoroles.rlbotrole)
-      }
+      } else {
          member.addRole(autoroles.robloxlovers)
+      }
    } else {
       if (member.guild.id == autoroleguilds.rd) {
          if (member.user.bot) {
