@@ -1,6 +1,6 @@
 module.exports = (bot, member) => {
     console.log(`${member.displayName} just left ${member.guild.name}.`)
-    let guildids = ["318532861638737931", "264445053596991498",  "110373943822540800", "349661783612719119"]
+    let guildids = ["318532861638737931", "264445053596991498",  "110373943822540800", "349661783612719119", "473256784954392608"]
     
     if (guildids.includes(member.guild.id)) {
         return;
